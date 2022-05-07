@@ -16,8 +16,13 @@ You can [buy a kit here](https://mustardcorner.com/desktop-weather) or [build on
 6. Copy the Key as we will need this later. You will set the environment variable of `OPEN_WEATHER_APIKEY` with this key.
     Note: It takes about 10-15 minutes for the API key to start working and for us to have access.
 
+### Get the OS image
+1. Head over to the [balenaHub](https://hub.balena.io/gh_nucleardreamer/desktopweather) page for DesktopWeather.
+2. Click on `Get Started`, set your WiFi credentials, and follow the flashing instructions on the right.
+    <p align="left"><img src="https://raw.githubusercontent.com/nucleardreamer/balena-desktop-weather/main/docs/open-fleet-add-device.jpg"></p>
+
 ### Configure environment variables
-1. Head over to [http://desktop-weather.local/](http://desktop-weather.local/)
+1. Head over to [http://desktop-weather.local/](http://desktop-weather.local/). If you just plugged your device in, it might take a few minutes for the software to update.
 2. Navigate to the `Configuration` section
 3. Click `Add/change Environment Variable`
 4. Set your `OPEN_WEATHER_APIKEY` as the `key`, and your token from before as `value`
