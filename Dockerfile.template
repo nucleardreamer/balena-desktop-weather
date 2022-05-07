@@ -1,0 +1,14 @@
+ARG BALENA_ARCH=%%BALENA_ARCH%%
+
+FROM balenalib/$BALENA_ARCH-alpine-python
+
+RUN apk add --no-cache -Uu --virtual .build-dependencies python3-dev build-base \
+    && pip3 install --no-cache --upgrade RPi.GPIO requests \
+    && apk del --purge .build-dependencies \
+    && rm -rf /var/cache/apk/* /tmp/*
+
+COPY . ./
+
+CMD ["python3", "/Desktop-Weather/main.py"]
+
+ENV OPEN_WEATHER_APIKEY=not_set

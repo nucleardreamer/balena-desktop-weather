@@ -1,0 +1,27 @@
+name: Desktop Weather Display
+description: >-
+  A fun project that sits on your desk and shows the current weather
+version: 1.0.0
+type: sw.application
+joinable: true
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/nucleardreamer/balena-desktop-weather'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/nucleardreamer/balena-desktop-weather/master/logo.png'
+data:
+  applicationEnvironmentVariables:
+    - OPEN_WEATHER_APIKEY: "not_set"
+    - LATITUDE: "19.6069"
+    - LONGITUDE: "-155.5056"
+    - SERVO_PIN_1: "18"
+    - SERVO_PIN_2: "23"
+    - BUTTON_PIN: "17"
+
+  defaultDeviceType: raspberrypi0-2w-64
+  supportedDeviceTypes:
+    - aarch64
