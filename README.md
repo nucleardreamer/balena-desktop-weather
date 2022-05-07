@@ -1,7 +1,7 @@
-# balena-desktop-weather
-Balena-fied version of the mustard corner desktop weather device
+# Desktop Weather device (built on Balena)
+Balena-fied version of the mustard corner desktop weather device.
 
-You can [buy a kit here](https://mustardcorner.com/desktop-weather) or [build one yourself!](https://mustardcorner.com/desktop-weather)
+You can [buy a kit here](https://mustardcorner.com/desktop-weather) or [build one yourself!](https://mustardcorner.com/desktop-weather). Go ahead and follow the [build guide](https://docs.google.com/document/d/11vR3yRZwERgpbvUFGCC37iavZzRNs2ug5QalcxWYfPg/edit?usp=sharing) for printing, soldering and wiring. When you hit the software step, that's where this repo steps in!
 
 ## Setup
 
