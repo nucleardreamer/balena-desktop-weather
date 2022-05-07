@@ -22,6 +22,7 @@ You can [buy a kit here](https://mustardcorner.com/desktop-weather) or [build on
     <p align="left"><img src="https://raw.githubusercontent.com/nucleardreamer/balena-desktop-weather/main/docs/add-env-var.jpg"></p>
 5. Set `LATITUDE` and `LONGITUDE` the same way, with your own values
     Note: If you don't see the variables showing up, it's possible the service has restarted - so go ahead and wait just a minute before trying again (this is normal behavior)
+6. If you deviated from the wiring instructions and are using different pins, this is where you would set `SERVO_PIN_1`, `SERVO_PIN_2` and `BUTTON_PIN`
 
 ## Environment variables
 
