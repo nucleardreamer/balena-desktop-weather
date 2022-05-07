@@ -6,27 +6,22 @@ services:
     build: .
     network_mode: host
     restart: always
-    privileged: true
 
   balena-device-ui:
     image: ghcr.io/maggie0002/bdu
     network_mode: host
     environment:
-      NETWORK_MODE: host # Tell the app if running in `bridge` or `host` network mode
+      NETWORK_MODE: host
       ON_DEVICE: true
-      SET_HOSTNAME: "balena"
+      SET_HOSTNAME: "desktop-weather"
     restart: always
     ports:
       - "80:80"
     volumes:
       - "bdu_db:/app/db"
       - "bdu_storage:/app/storage"
-
-    # If using the Volume Manager to access volumes on other containers, ensure this container `depends_on` your
-    # other container using the below:
-    # depends_on:
-    #  - "your-other-container-name"
-
+    depends_on:
+     - "desktop-weather"
     labels:
       io.balena.features.supervisor-api: 1
       io.balena.features.balena-api: 1

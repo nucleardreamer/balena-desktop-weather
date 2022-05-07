@@ -1,0 +1,3 @@
+[submodule "Desktop-Weather"]
+	path = Desktop-Weather
+	url = git@github.com:nucleardreamer/Desktop-Weather
