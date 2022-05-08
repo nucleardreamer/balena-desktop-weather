@@ -6,6 +6,7 @@ services:
     build: .
     network_mode: host
     restart: always
+    privileged: true
 
   balena-device-ui:
     image: ghcr.io/maggie0002/bdu
