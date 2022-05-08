@@ -25,3 +25,4 @@ data:
   defaultDeviceType: raspberrypi0-2w-64
   supportedDeviceTypes:
     - aarch64
+    - armv6hf
