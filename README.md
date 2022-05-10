@@ -22,7 +22,7 @@ You can [buy a kit here](https://mustardcorner.com/desktop-weather) or [build on
     <p align="left"><img src="https://raw.githubusercontent.com/nucleardreamer/balena-desktop-weather/main/docs/open-fleet-add-device.jpg"></p>
 
 ### Configure environment variables
-1. Head over to [http://desktop-weather.local/](http://desktop-weather.local/). If you just plugged your device in, it might take a few minutes for the software to update.
+1. Head over to [http://desktop-weather.local/](http://desktop-weather.local/). If you just plugged your device in, it might take a few minutes for the software to update. By a few minutes, it's probably going to take close to ~15 minutes.
 2. Navigate to the `Configuration` section
 3. Click `Add/change Environment Variable`
 4. Set your `OPEN_WEATHER_APIKEY` as the `key`, and your token from before as `value`
