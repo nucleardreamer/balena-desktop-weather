@@ -10,5 +10,5 @@ RUN apk add --no-cache -Uu --virtual .build-dependencies python3-dev build-base 
 COPY . ./
 
 CMD ["python3", "/Desktop-Weather/main.py"]
-
+# CMD ["balena-idle"]
 ENV OPEN_WEATHER_APIKEY=not_set
